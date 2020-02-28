@@ -1,0 +1,4 @@
+[
+  "tests/test_password_is_valid.py::test_password_is_valid",
+  "tests/test_password_is_ok.py::test_password_is_ok"
+]
