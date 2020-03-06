@@ -1,4 +1,8 @@
 [
   "tests/test_password_is_valid.py::test_password_is_valid",
-  "tests/test_password_is_ok.py::test_password_is_ok"
+  "tests/test_password_is_ok.py::test_password_is_ok",
+  "tests/test_password_is_valid.py::test_lowercase",
+  "tests/test_password_is_valid.py::test_uppercase",
+  "tests/test_password_is_valid.py::test_num_digits",
+  "tests/test_password_is_valid.py::test_special_charectors"
 ]

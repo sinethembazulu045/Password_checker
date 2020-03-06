@@ -1,17 +1,19 @@
 import pytest
-from password_checker.password_checker import Password_Checker
+from password_checker.password_check import Password_Checker
 
+password = "eof87PQz#"
+
+password_Checker = Password_Checker(password)
+
+def test_lowercase():
+    assert password_Checker.lowercase(password)==True
+def test_uppercase():
+    assert password_Checker.uppercase(password)==True
+def test_num_digits():
+    assert password_Checker.num_digits(password)==True
+def test_special_charectors():
+    assert password_Checker.special_charectors(password)==True
 def test_password_is_valid():
-    with pytest.raises(Exception) as e:
-        password = "qwe#5K2yd"
-        password_checker = Password_Checker(password)
-        assert Password_Checker.password_is_valid(password)
-    assert str(e.value) == 'length of the password should be more than 8'
+    assert password_Checker.password_is_valid(password)==True
 
-    # assert password_checker.password_is_valid(password)==True
-    # assert password_checker.lowercase(password)==True
-    # assert password_checker.uppercase(password)==True
-    # assert password_checker.num_digits(password)==True
-    # assert password_checker.special_charectors(password)==True
-  
    
